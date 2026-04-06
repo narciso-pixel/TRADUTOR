@@ -1,44 +1,65 @@
-.translator {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-.header {
-    text-align: center;
-    font-size: 24px;
-    color: #333;
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.input-area {
-    margin-bottom: 20px;
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --button-background: linear-gradient(45deg, #6b7c93, #4a6d8c);
 }
 
-.input-area input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+a { color: #4a6d8c; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
 
 .button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background: var(--button-background);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .button:hover {
-    background-color: #218838;
+  background: #3b4e6c;
 }
 
-.output-area {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: white;
+input, textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1e1e1e;
+    --text-color: #ffffff;
+    --button-background: linear-gradient(45deg, #2c3e50, #34495e);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
 }
