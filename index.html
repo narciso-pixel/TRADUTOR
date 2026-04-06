@@ -1,1 +1,28 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Translator App</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <header>\n        <h1>Translator App</h1>\n    </header>\n    <main>\n        <section>\n            <label for="text-to-translate">Enter text to translate:</label>\n            <textarea id="text-to-translate" rows="4" cols="50"></textarea>\n            <button id="translate-button">Translate</button>\n        </section>\n        <section>\n            <h2>Translation</h2>\n            <p id="translation-result"></p>\n        </section>\n    </main>\n    <footer>\n        <p>&copy; 2026 Translator App</p>\n    </footer>\n    <script src="script.js"></script>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-title">Translator</h1>
+    </header>
+    <main>
+        <section id="input-section">
+            <textarea id="input-text" placeholder="Enter text here..."></textarea>
+            <button id="translate-button">Translate</button>
+        </section>
+        <section id="output-section">
+            <h2 id="output-title">Translation</h2>
+            <p id="output-text"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Translator App © 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
